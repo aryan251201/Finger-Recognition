@@ -1,0 +1,11 @@
+First run the test.py file for both the gestures and numbers model and save these models on your local m/c and then load them in codes for RPi
+
+You may need to install many libraries for the project such as 
+"Open CV"
+"Tensorflow"
+"Keras"
+"PyAutoGUI"
+
+If you get an error : ModuleNotFoundError => install missing library on m/c
+
+model can be saved by using command : model.save("<name>.h5")

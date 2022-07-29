@@ -1,0 +1,24 @@
+This document contains details about our problem statement.
+
+1) Soda Machine Problem
+We see many soda shops in our localities and even though the soda pops out of a machine, pretty much everything is done by the vendor and it increases the time of service and also increases the chances of spillage, underfill, overfill, etc..
+To counter this issue we propose an automated soda machine which works (literally) by the tips our hand. We need to show some gestures corresponding to different button on soda m/c and the preinstalled cups fixed in their places will be filled by the flavour of our choice.
+Okay, so now this works when we show different number gestures to the camera installed on top of soda m/c. Each number (1-4) corresponds to different flavours of soda and the number 5 is reserved for shutting down the machine.
+
+Code Logic :
+We saved our numbers model and loaded it in the code. Then we predicted the class of the image shown by user (tested this) with our model and saved the o/p to variable called classes.
+We then assigned a bool to check for the state of the machine where 'True' means on and 'False means off. It is followed by if statements where we check the I/P class given to us and accordingly we operate the buttons on soda m/c and print a small line of text for user to comprehend.
+When we get an input of number five our bool is set to false which implies that the m/c is now turned off.
+
+
+2) Alarm Clock Problem?
+Why do we need an alarm clock and who uses an alarm clock? Now that's the question which arises in our mind!
+We are the modern age engineers and we are known for our rush timings when we get up at 7:55 and we get ready and reach classes by 8 but still many people need alarm clock to actually get up and go to work.
+Now we automated the alarm clock with the help of hand gestures and set it so that a person must be fully awaken to stop it. This advanced solution has many advantages like it won't easily break by hard pressing of buttons and its glass will be protected for a longer life and most importantly, you need to actually wake your mind to show that particular gesture to stop the alarm.
+
+This capturing of image by camera might wake the person up and ready for his daily chores in time.
+
+Code Logic:
+We saved our gestures model and loaded it in the code. Then we predicted the class of the image shown by user (tested this) with our model and saved the o/p to variable called classes.
+We then assigned a bool to check for the state of the clock where 'True' means on and 'False means off. It is followed by if statements where we check the I/P class given to us and accordingly we operate the off button on alarm clock and we printed the time with ic2lcd driver to know the current timing.
+
